@@ -1,0 +1,7 @@
+<label class="control">
+  <mat-checkbox [color]="'primary'" (change)="toggleAll($event)"></mat-checkbox>
+  <input type="text" autofocus placeholder="type and enter sa keyboard"
+         [formControl]="control"
+         (keyup.enter)="addTodo()">
+  <button mat-button color="accent" (click)="addTodo()">Add Todo Here</button>
+</label>
