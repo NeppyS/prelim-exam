@@ -6,7 +6,7 @@ import { FilterCategories, Todo } from '../features/todo/interfaces';
   providedIn: 'root'
 })
 export class TodoService {
-  todoList: WritableSignal<Todo[]> = signal<Todo[]>([{ id: Date.now(), text: 'Create the app', completed: true }]);
+  todoList: WritableSignal<Todo[]> = signal<Todo[]>([{ id: Date.now(), text: 'Sample', completed: true }]);
   activeFilter: WritableSignal<FilterCategories> = signal(FilterCategories.ALL);
 
   addTodo(text: string): void {
